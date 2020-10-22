@@ -1,0 +1,525 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  background-color: $body-bg;
+  font-family: "Nunito", sans-serif;
+}
+//navbar
+.navbar {
+  background: $nav-bg !important;
+  opacity: 1;
+  top: 10;
+  left: 0;
+  right: 0;
+}
+.navbar-brand {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: black;
+  @include shadow(text, 2px, 2px, 2px, #a5a8aa);
+  &:hover {
+    color: black;
+  }
+  img {
+    border: 2px solid $about-a;
+    border-radius: 50%;
+    padding: 3px;
+    margin-left: 10px;
+  }
+}
+#navbarNav {
+  ul {
+    li {
+      a {
+        color: $nav-font;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        padding: 7px 20px;
+      }
+      &:hover a {
+        color: $hov-font;
+        font-weight: 300;
+        // border-bottom: 2px solid;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+//home
+.sec-home {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  img {
+    opacity: 0.3;
+  }
+
+  > div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      color: $h-font;
+      height: 50%;
+      font-size: 3rem;
+      font-weight: 200;
+      letter-spacing: 4px;
+      // margin: 60px 10px 0;
+      // padding: 0 15px;
+      .name {
+        color: rgb(200, 111, 27);
+      }
+    }
+    p {
+      color: $p-font;
+      font-size: 25px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      padding: 5px 10px;
+      margin: 5px 10px;
+    }
+    a {
+      background: rgb(200, 111, 27);
+      color: $p-font;
+      font-size: 15px;
+      font-weight: 300;
+      margin-top: 10px;
+      //   padding: 10px;
+      border: 1px solid rgb(200, 111, 27);
+      border-radius: 100px;
+
+      &:hover {
+        background: $a-bg;
+        color: black;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//about
+.sec-about {
+  width: 100%;
+  height: 100%;
+
+  .img-fluid {
+    border: 2px solid $about-font;
+    border-radius: 10px;
+    padding: 15px;
+    // margin-top: 20px;
+  }
+  img,
+  p {
+    opacity: 0.7;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding-left: 7px;
+    opacity: 1;
+    color: $h-font;
+    strong {
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: $about-font;
+    padding: 7px;
+    margin: 7px;
+    .fab,
+    .far {
+      font-size: 30px;
+      padding: 10px 7px;
+      margin-top: 5px;
+      color: $icon-font;
+    }
+    a {
+      text-transform: uppercase;
+      font-size: 12px;
+      border-radius: 1000px;
+    }
+    a:nth-child(1) {
+      margin-right: 20px;
+      background: $about-a;
+      color: $p-font;
+      &:hover {
+        background-color: $icon-font;
+        color: black;
+        font-weight: bold;
+      }
+    }
+    a:nth-child(2) {
+      background-color: $icon-font;
+      &:hover {
+        background-color: $about-a;
+        color: $a-bg;
+        font-weight: bold;
+      }
+    }
+  }
+}
+//resume
+.sec-resume {
+  width: 100%;
+  height: 100%;
+
+  h2,
+  h3 {
+    color: $h-font;
+  }
+
+  .resume-item {
+    background: $resume-bg;
+    opacity: 0.6;
+    padding: 15px;
+    border-radius: 15px;
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+      padding: 8px 7px;
+      margin: 10px;
+      color: white;
+    }
+    .date {
+      font-size: 18px;
+      color: $date-col;
+      padding: 8px 7px;
+      margin: 10px;
+    }
+    .school,
+    .job {
+      font-size: 18px;
+      font-weight: 400;
+      color: $sch-col;
+      padding: 8px 7px;
+      margin: 10px;
+    }
+    .level {
+      color: $date-col;
+      padding: 10px 7px;
+    }
+    &:hover {
+      background: $item-bg;
+      opacity: 0.7;
+      @include shadow(box, 5px, 5px, 5px, $shadow);
+    }
+  }
+}
+//skills
+#skills {
+  .skill-items {
+    margin: 5px;
+    padding: 15px;
+  }
+  .progress-wrap,
+  .progress {
+    opacity: 0.7;
+  }
+  .progress {
+    background-color: $h-font;
+  }
+  .progress-bar {
+    background: $skill-bg;
+    padding: 10px;
+  }
+  h2 {
+    font-size: $h4-font;
+    letter-spacing: 3px;
+  }
+  h4 {
+    color: $h4-font;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    padding: 10px 0;
+    margin: 7px 0;
+  }
+  p {
+    color: $skill-bg;
+    font-size: 22px;
+  }
+}
+//services
+
+.sec-services {
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    color: $h-font;
+    font-size: $h4-font;
+    font-weight: 200;
+    letter-spacing: 3px;
+  }
+  h5 {
+    color: $h-font;
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+
+  .service-item {
+    background: $ser-bg;
+    border-radius: 15px;
+    opacity: 0.6;
+    margin: 10px;
+    padding: 15px 0;
+
+    &:hover {
+      opacity: 1;
+      @include shadow(box, 5px, 5px, 5px, $shadow);
+      padding: 10px;
+      margin: 10px;
+
+      h4 {
+        font-weight: 400;
+        opacity: 1;
+      }
+    }
+
+    h3 {
+      color: $h-font;
+      opacity: 0.6;
+      border-bottom: 1px solid white;
+      padding: 5px 10px;
+      margin: 5px;
+      letter-spacing: 3px;
+    }
+    .icon {
+      font-size: 50px;
+      color: $ser-icon;
+    }
+    h4 {
+      color: $ser-item;
+      font-size: 20px;
+      font-weight: 300;
+      padding: 10px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+//projects
+.sec-projects {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  .item {
+    border: 3px solid $item-bg;
+    border-radius: 7px;
+    opacity: 1;
+    background: $body-bg;
+  }
+  .item1 {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  h2 {
+    color: $h-font;
+    font-size: $h4-font;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+  h3 {
+    font-size: $h4-font;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: $icon-font;
+  }
+
+  .hover-box {
+    position: relative;
+  }
+
+  .hover-box > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .hover-box:hover > div {
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 7px;
+    background: $box-bg;
+  }
+  /* modal */
+  .modal-body {
+    h2 {
+      color: $h-font;
+      font-weight: 300;
+      letter-spacing: 4px;
+    }
+    p {
+      color: $a-font;
+      font-weight: 200;
+      letter-spacing: 3px;
+      a {
+        text-decoration: none;
+        color: $hov-font;
+        font-size: 20px;
+        font-weight: 400;
+        &:hover {
+          color: black;
+          background-color: $icon-font;
+          // padding: 5px;
+          font-size: 18px;
+          border-radius: 100px;
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+  .modal-btn {
+    background-color: $box-bg;
+  }
+  .modal-btn:focus {
+    outline: none !important;
+  }
+  .outline {
+    border: 7px solid #d5d5d5;
+  }
+}
+
+//contact
+.sec-contact {
+  width: 100%;
+  height: 100%;
+  background: $con-bg;
+  background-image: url(/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .contact-details {
+    opacity: 0.7;
+    ul {
+      background-color: $con-bg;
+      border-radius: 7px;
+      &:hover {
+        background-color: black;
+      }
+      li {
+        list-style-type: none;
+        padding: 10px;
+        font-size: 12px;
+        color: $ser-item;
+        letter-spacing: 3px;
+        span {
+          display: block;
+          color: $form-btn;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 4px;
+          margin-bottom: 5px;
+          border-bottom: 2px solid rgb(22, 22, 22);
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $h-font;
+    font-size: $h4-font;
+    font-weight: 300;
+    letter-spacing: 4px;
+  }
+  h3 {
+    color: $p-font;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+}
+.btn {
+  background: $form-btn;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  &:hover {
+    background-color: #ffffff;
+  }
+}
+.form-control {
+  border: none !important;
+  background: $form-bg;
+  &:hover {
+    background-color: black;
+  }
+  @include shadow(box, 1px, 2px, 1px, rgba(0, 0, 0, 0.1));
+  &:active,
+  &:focus {
+    background: $form-btn;
+  }
+}
+
+//footer
+.sec-footer {
+  // background-color: #fff;
+  padding: 4em 0;
+  margin: 2em 0;
+  opacity: 0.6;
+  p {
+    color: $ser-item !important;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .social-item {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: #333;
+      border: 3px solid $i-font;
+      position: relative;
+      border-radius: 50%;
+      font-size: 30px;
+      margin: 10px;
+      &:hover {
+        color: $icon-font;
+        border-color: $i-font;
+        background-color: $icon-font;
+      }
+      > i {
+        color: $i-font;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

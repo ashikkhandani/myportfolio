@@ -1,0 +1,9 @@
+@mixin shadow($type, $x, $y, $blur, $color) {
+  #{$type}-shadow: $x $y $blur $color;
+}
+@mixin flex($direction, $main-axis, $cross-axis) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $main-axis;
+  align-items: $cross-axis;
+}

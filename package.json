@@ -1,0 +1,24 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss  css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashikkhandani/myportfolio.git"
+  },
+  "keywords": [],
+  "author": "Ashik Ahammed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashikkhandani/myportfolio/issues"
+  },
+  "homepage": "https://github.com/ashikkhandani/myportfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
