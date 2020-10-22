@@ -7187,7 +7187,7 @@ body {
 
 #navbarNav ul li a {
   color: #6c757d;
-  font-size: 15px;
+  font-size: 15px !important;
   font-weight: 300;
   letter-spacing: 3px;
   padding: 7px 20px; }
