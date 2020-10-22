@@ -7475,8 +7475,7 @@ body {
 .sec-contact {
   width: 100%;
   height: 100%;
-  background: #363636;
-  background-image: url(/images/banner.jpg);
+  background-image: url "(/images/banner.jpg)";
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
