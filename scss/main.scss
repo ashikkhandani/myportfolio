@@ -18,9 +18,6 @@ body {
 .navbar {
   background: $nav-bg !important;
   opacity: 1;
-  top: 10;
-  left: 0;
-  right: 0;
 }
 .navbar-brand {
   font-size: 28px;
@@ -43,7 +40,7 @@ body {
     li {
       a {
         color: $nav-font;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
         letter-spacing: 3px;
         padding: 7px 20px;
@@ -121,7 +118,7 @@ body {
     border: 2px solid $about-font;
     border-radius: 10px;
     padding: 15px;
-    // margin-top: 20px;
+    // width: 100%;
   }
   img,
   p {
@@ -413,7 +410,7 @@ body {
 .sec-contact {
   width: 100%;
   height: 100%;
-  // background: $con-bg;
+  background: $con-bg;
   // background: url(images/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
