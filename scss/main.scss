@@ -45,6 +45,7 @@ body {
         letter-spacing: 3px;
         padding: 7px 20px;
       }
+
       &:hover a {
         color: $hov-font;
         font-weight: 300;
@@ -285,9 +286,9 @@ body {
 
     &:hover {
       opacity: 1;
-      @include shadow(box, 5px, 5px, 5px, $shadow);
-      padding: 10px;
-      margin: 10px;
+      @include shadow(box, 2px, 2px, 2px, $shadow);
+      // padding: 10px;
+      // margin: 10px;
 
       h4 {
         font-weight: 400;

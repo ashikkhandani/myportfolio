@@ -14,12 +14,12 @@
     <script src="https://kit.fontawesome.com/3fb0fd13b4.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="page-top">
 
-    <!--Navbar-->
+    <!--Navigation bar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <a class="navbar-brand pl-0 pl-lg-5" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top" id="sideNav">
+        <a class="navbar-brand pl-0 pl-lg-5 js-scroll-trigger" href="#page-top">
             <img src="images/logo.jpg" width="40" height="40" class="d-inline-block align-top " alt="logo" loading="lazy">
             Ashik</a>
 
@@ -29,25 +29,25 @@
         </button>
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
             <ul class="navbar-nav text-uppercase">
-                <li class="nav-item  active">
-                    <a class="nav-link" href="#home">Home
+                <li class="nav-item ">
+                    <a class="nav-link js-scroll-trigger" href="#home">Home
                     <span class="sr-only">(current)</span> </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
                 </li>
                
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -82,27 +82,26 @@
         <div class="row my-5 py-4 justify-content-center 
 
         align-items-center">
-            <div class="col-10 col-md-5 py-4 my-5 py-md-0 my-md-0">
+            <div class="col-8 col-md-6 py-4 my-5 py-md-0 my-md-0">
                 <img src="images/myphoto.jpg" alt="myphoto" class="img-fluid ">
             </div>
-            <div class="col-10 col-lg-5 my-md-4 py-md-4 text-left about-heading ">
+            <div class="col-10 col-md-5 my-md-3 my-lg-5 py-md-4 text-left about-heading ">
                 <h2>About <strong>Me</strong></h2>
 
                 <p class="lead my-md-3 py-md-3">I am a full stack Web-developer with the experience of UI/UX Design,<br>
-                    <i class="fab fa-html5"></i>HTML5,<br>
-                     <i class="fab fa-css3"></i>CSS3,<br> <i
-                        class="fab fa-sass"></i>SASS/SCSS,<br>
-                    <i class="fab fa-bootstrap"></i>BOOTSTRAP4,<br> <i class="fab fa-js"></i>JAVASCRIPT,<br>
+                    <i class="fab fa-html5"></i>HTML5,<i class="fab fa-css3"></i>CSS3,<br> <i
+                        class="fab fa-sass"></i>SASS/SCSS,
+                    <i class="fab fa-bootstrap"></i>BOOTSTRAP4,<br> <i class="fab fa-js"></i>JAVASCRIPT,
                     <i class="far fa-file-code"></i>JQUERY,<br>
-                    <i class="fab fa-react"></i>REACT,<br> <i class="fab fa-node"></i> NODE.JS,<br>
-                    <i class="fab fa-node-js"></i>EXPRESS.JS,<br>
+                    <i class="fab fa-react"></i>REACT, <i class="fab fa-node"></i> NODE.JS,<br>
+                    <i class="fab fa-node-js"></i>EXPRESS.JS,
                     <i class="fab fa-mdb"></i>MONGODB.
                 </p>
                 <p class="mb-5">I am from Bangladesh, living in Berlin, a food-lover, like to travel, sports, playing
                     games etc. </p>
 
-                <p> <a href="#contact" class="btn  px-4 py-2 mb-3 mb-md-5 btn-sm">Hire Me</a>
-                    <a href="#skills" class="btn  px-4 py-2 mb-3 mb-md-5 btn-sm ">Skills</a></p>
+                <p> <a href="#contact" class="btn px-3 py-2 mb-3 mb-md-5 btn-sm">Hire Me</a>
+                    <a href="#skills" class="btn  px-3 py-2 mb-3 mb-md-5 btn-sm ">Skills</a></p>
             </div>
         </div>
     </div>
@@ -113,7 +112,7 @@
         <div class="row my-md-5 py-md-5 justify-content-center py-5 text-light">
   <div class="col-md-12 heading-section text-center  ftco-animate">
     <h2 class="mb-4">My <strong> Skills </strong></h2>
-    <p class=" text lead text-center skill-text"> Skill  is updating...</p>
+    <p class=" text lead text-center skill-text"> Skills are updating...</p>
   </div>
 </div>
         <div class="row my-2  skill-items">
@@ -329,28 +328,6 @@
                     <h3>Service and Team Supervisor</h3>
                     <span class="job">Antons OHG Gastronomiebetriebe, Berlin, Germany</span>
                 </div>
-                <div class="resume-item mb-4 mt-md-4">
-                    <span class="date">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                            <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                          </svg>
-                         February 2015 - August 2016
-                    </span>
-                    <h3>Service and Team Supervisor</h3>
-                    <span class="job">Haweli Restaurant, Berlin, Germany</span>
-                </div>
-                <div class="resume-item mb-4 mt-md-3">
-                    <span class="date">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                            <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                          </svg>
-                         September 2013 - February 2015
-                    </span>
-                    <h3>Bar Keeper</h3>
-                    <span class="job">Que Pasa Mexican Restaurant, Berlin, Germany</span>
-                </div>
             </div>
         </div>
    
@@ -419,10 +396,10 @@ id="projects" >
     </div>
 </div>
      
-      <div class="container ">
+      <div class="container  ">
         <div class="row justify-content-center align-items-center">
           <!--item-->
-          <div class=" col-md-5 mb-5 pb-5 ">
+          <div class=" col-md-10  mb-5 pb-5 ">
             <div class="m-1 item">
               <div class="hover-box">
                 <img
@@ -447,7 +424,7 @@ id="projects" >
 
     <!--Contact-->
 
-    <div class="container sec-contact"
+    <div class="container col-md-12 sec-contact"
     id="contact"
     style="background-image: url(./images/banner.jpg);"
    
@@ -459,7 +436,7 @@ id="projects" >
                 </div>
             </div>
 
-            <div class="col-md-7 mb-4 mb-md-0 contact-details">
+            <div class="col-md-6 mb-4 mb-md-0 contact-details">
                 <form action="" class="site-form">
                     <h3 class="mb-3">Get In Touch</h3>
                     <div class="form-group">
@@ -480,7 +457,7 @@ id="projects" >
                 </form>
             </div>
 
-            <div class="col-md-5 pl-md-5 contact-details
+            <div class="col-md-6 pl-md-5 contact-details
            ">
                 <h3 class="mb-5 ">My Contact Details</h3>
                 <ul class="text-white">
@@ -526,7 +503,7 @@ id="projects" >
 
         <div class="row mb-5">
             <p class="col-12 py-3 text-center">
-                Copyright &copy;All rights reserved | by Ashik Ahammed 2020
+                Copyright &copy;All rights reserved | by <strong> Ashik Ahammed  </strong>2020
             </p>
 
         </div>
@@ -596,6 +573,7 @@ id="projects" >
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+       
 <script src="app.js"></script>
 </body>
 
